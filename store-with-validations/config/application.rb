@@ -1,7 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'csv'
-require 'iconv'
+# require 'iconv'
 require 'rails/all'
 
 if defined?(Bundler)
@@ -60,5 +60,10 @@ module Store
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    #Instead of Iconv see below?
+    # string.encode("UTF-8", :invalid => :replace, :undef => :replace, :replace => "?")
+
+
   end
 end

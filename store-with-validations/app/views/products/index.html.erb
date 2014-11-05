@@ -15,7 +15,7 @@
 <% @products.each do |product| %>
   <tr>
     <td><%= product.name %></td>
-    <td><%= product.released_on.strftime("%B %e, %Y") %></td>
+    <td><%= product.created_at %></td>
     <td><%= number_to_currency(product.price) %></td>
   </tr>
 <% end %>
